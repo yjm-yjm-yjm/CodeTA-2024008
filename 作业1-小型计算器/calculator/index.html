@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>计算器 - 黄敏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calc">
+    <div class="head">
+      <span class="title">计算器</span>
+      <span class="history-btn" onclick="toggleHistory()">📋 历史</span>
+    </div>
+    <div class="screen" id="screen">0</div>
+    <div class="panel">
+      <button class="c" onclick="allClear()">C</button>
+      <button onclick="back()">⌫</button>
+      <button class="o" onclick="setOp('/')">÷</button>
+      <button class="o" onclick="setOp('*')">×</button>
+      <button onclick="push('7')">7</button>
+      <button onclick="push('8')">8</button>
+      <button onclick="push('9')">9</button>
+      <button class="o" onclick="setOp('-')">−</button>
+      <button onclick="push('4')">4</button>
+      <button onclick="push('5')">5</button>
+      <button onclick="push('6')">6</button>
+      <button class="o" onclick="setOp('+')">+</button>
+      <button onclick="push('1')">1</button>
+      <button onclick="push('2')">2</button>
+      <button onclick="push('3')">3</button>
+      <button class="eq" onclick="calc()">=</button>
+      <button class="w2" onclick="push('0')">0</button>
+      <button onclick="push('.')">.</button>
+    </div>
+    <div class="history" id="history" style="display:none"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
